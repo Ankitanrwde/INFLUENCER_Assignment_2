@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+<header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+
+            <!-- Logo and Website Name -->
+            <div class="flex items-center space-x-2">
+                <img src="images/logo.jpg" alt="Logo" class="h-8">
+                <span class="text-lg font-semibold hidden md:block">Charityflow</span>
+            </div>
+
+            <!-- Hamburger Menu Icon -->
+            <div class="md:hidden">
+                <button id="hamburger" class="hamburger">
+                    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-800 hover:text-gray-600">Home</a>
+                <a href="#" class="text-gray-800 hover:text-gray-600">Causes</a>
+                <a href="#" class="text-gray-800 hover:text-gray-600">About</a>
+                <a href="#" class="text-gray-800 hover:text-gray-600">Contact</a>
+            </nav>
+
+            <!-- Donate Button with Heart Icon -->
+            <div class="hidden md:block">
+                <a href="#" class="bg-white text-gray-800 hover:text-gray-600 py-2 px-4 flex items-center justify-center rounded-full">
+                    <svg class="w-6 h-6 mr-2 heart-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a1.5 1.5 0 0 1-1.5-1.5V13h3v3.5A1.5 1.5 0 0 1 10 18zm0-16a3.5 3.5 0 0 0-3.5 3.5C6.658 8.422 8.488 10 10 10c1.512 0 3.342-1.578 3.5-2.5A3.5 3.5 0 0 0 10 2z" clip-rule="evenodd"></path>
+                    </svg>
+                    Donate Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Hamburger Menu) -->
+    <div id="mobile-menu" class="md:hidden bg-white shadow-md">
+        <nav class="flex flex-col space-y-2 py-2 px-4">
+            <a href="#" class="text-gray-800 hover:text-gray-600">Home</a>
+            <a href="#" class="text-gray-800 hover:text-gray-600">Causes</a>
+            <a href="#" class="text-gray-800 hover:text-gray-600">About</a>
+            <a href="#" class="text-gray-800 hover:text-gray-600">Contact</a>
+        </nav>
+    </div>
+
+<!-- Content -->
+<main class="container mx-auto p-4">
+    <!-- Your content here -->
+</main>
+
+</body>
+</html>

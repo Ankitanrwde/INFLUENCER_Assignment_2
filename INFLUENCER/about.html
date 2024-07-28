@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="about.css">
+  </head>
+  <body>
+    <header class="bg-white ">
+        <!-- NAvbar -->
+        <div class="container mx-auto flex justify-between items-center py-4 px-6 bg-pink-100">
+          <!-- Logo and Website Name -->
+          <div class="flex items-center space-x-2">
+            <img src="images/logo.jpg" alt="Logo" class="h-8">
+            <span class="text-[30px] font-semibold hidden md:block text-[#ffbf00]">Charityflow</span>
+          </div>
+          <!-- Hamburger Menu Icon -->
+          <div class="md:hidden">
+            <button id="hamburger" class="hamburger">
+              <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+          <!-- Navigation Links -->
+          <nav class="hidden md:flex space-x-4">
+            <a href="Home.html" class="text-gray-700 font-bold text-[20px]  hover:text-[#ffbf00] hover:underline underline-offset-8 ">Home</a>
+            <a href="causes.html" class="text-gray-700 font-bold text-[20px]  hover:text-[#ffbf00]  hover:underline underline-offset-8">Causes</a>
+            <a href="about.html" class="text-gray-700 font-bold text-[20px]  hover:text-[#ffbf00]  hover:underline underline-offset-8">About</a>
+            <a href="contact.html" class="text-gray-700 font-bold text-[20px]  hover:text-[#ffbf00] hover:underline underline-offset-8 ">Contact</a>
+            <a href="events.html" class="text-gray-700 font-bold text-[20px]  hover:text-[#ffbf00] hover:underline underline-offset-8 ">Events</a>
+          </nav>
+          <!-- Donate Button with Heart Icon -->
+          <div class="hidden md:block">
+            <a href="#" class="bg-white text-gray-800 hover:text-gray-600 py-2 px-4 flex items-center justify-center rounded-full">
+              <svg class="w-6 h-6 mr-2 heart-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10 18a1.5 1.5 0 0 1-1.5-1.5V13h3v3.5A1.5 1.5 0 0 1 10 18zm0-16a3.5 3.5 0 0 0-3.5 3.5C6.658 8.422 8.488 10 10 10c1.512 0 3.342-1.578 3.5-2.5A3.5 3.5 0 0 0 10 2z" clip-rule="evenodd"></path>
+              </svg> Donate Now </a>
+          </div>
+        </div>
+      </header>
+      <!-- Mobile Menu (Hamburger Menu) -->
+      <div id="mobile-menu" class="md:hidden bg-white shadow-md">
+        <nav class="flex flex-col space-y-2 py-2 px-4">
+          <a href="#" class="text-gray-800 hover:text-gray-600">Home</a>
+          <a href="#" class="text-gray-800 hover:text-gray-600">Causes</a>
+          <a href="#" class="text-gray-800 hover:text-gray-600">About</a>
+          <a href="#" class="text-gray-800 hover:text-gray-600">Contact</a>
+        </nav>
+      </div>
+    <div class="bg-pink-100">
+      <div class="bg-[#391D47] lg:h-[140vh] ">
+        <p class="lg:text-7xl sm:text-4xl text-center lg:mx-[50px] font-bold text-white px-[50px] py-[100px]">Welcome to our purpose of making the world brighter, together</p>
+        <div class="grid lg:grid-cols-2  gap-[100px]">
+          <div>
+            <img src="images/about.jpg" alt="" class=" rounded-2xl lg:ml-[80px] lg:w-[90vh] sm:w-[70vh] sm:mx-auto">
+          </div>
+          <div class="grid sm:grid-roes-3 lg:grid-rows-3 lg:mx-1 mt-20 mr-[200px] sm:pb-20 sm:mt-1 sm:mx-[100px]">
+            <div class="mt-[-30px]">
+              <div>
+                <h1 class="text-[56px] text-white font-bold">140+</h1>
+                <p class="text-white text-[18px] font-sans">This month, we are thrilled to welcome a wonderful group of volunteers to our team.</p>
+              </div>
+              <div class="mt-10">
+                <h1 class="text-[56px] text-white font-bold">20K</h1>
+                <p class="text-white text-[18px] font-sans">Our new volunteers have made a remarkable human impact this month.</p>
+              </div>
+              <div class="mt-10">
+                <h1 class="text-[56px] text-white font-bold">60k</h1>
+                <p class="text-white text-[18px] font-sans">The dedication of our volunteers has been extraordinary, resulting in numerous lives saved through their efforts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid lg:grid-cols-2 sm:grid-cols-1 [40vh] mt-[200px]">
+        <div class="mx-[100px]">
+          <h1 class="text-[56px] font-bold leading-tight">The mission of our organization</h1>
+          <p class="text-[18px] mt-5">Explore our diverse range of programs and initiatives aimed at fostering positive change and making a tangible impact in communities worldwide.</p>
+        </div>
+        <div class="grid grid-rows-4 gap-10 mr-[100px] container">
+          <div class="rounded-2xl p-5 bg-white h-[30vh] mt-10 hover:scale-95 card">
+            <img src="images/cap.svg" alt="" class="w-10 mb-5">
+            <h1 class="text-black font-bold text-2xl mb-4">Education and training program</h1>
+            <p class="text-[18px] text-gray-500">Our Education and Training Program is designed to equip individuals with the knowledge, skills, and opportunities they need to thrive.</p>
+          </div>
+          <div class="rounded-2xl p-5 bg-white h-[30vh] hover:scale-95 card">
+            <img src="images/heart.svg" alt="" class="w-10 mb-5">
+            <h1 class="text-black font-bold text-2xl mb-4">Promoting wellness and security</h1>
+            <p class="text-[18px] text-gray-500">Involves fostering a holistic approach to health and safety, encompassing physical, mental, and emotional well-being while ensuring a secure environment.</p>
+          </div>
+          <div class="rounded-2xl p-5 bg-white h-[30vh] mt-[-40px] hover:scale-95 card">
+            <img src="images/zig.svg" alt="" class="w-10 mb-5 ">
+            <h1 class="text-black font-bold text-2xl mb-4">Responding swiftly to disasters</h1>
+            <p class="text-[18px] text-gray-500">Entails immediate and effective action to address and mitigate the impacts of natural or man-made catastrophes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-[-35vh]">
+        <h1 class="text-black text-[56px] font-bold">Our volunteers</h1>
+        <p class="text-[18px] text-gray-600">If you're dedicated to making a real difference, think about volunteering with CharityFlow.</p>
+      </div>
+      <div class="grid lg:grid-cols-3  sm:grid-cols-1 lg:mx-[100px] sm:mx-[20px] gap-10 mt-10">
+        <div>
+          <img src="images/vol.webp" alt="" class="rounded-3xl lg:w-[60vh] sm:w-[100vh]">
+          <h1 class="text-[28px] font-bold">Dennis Barrett</h1>
+          <h2 class="text-[18px] text-gray-500">Founder & CEO</h2>
+        </div>
+        <div>
+          <img src="images/vol1.webp" alt="" class="rounded-3xl w-[60vh] sm:w-[100vh]">
+          <h1 class="text-[28px] font-bold">Bryan Knight</h1>
+          <h2 class="text-[18px] text-gray-500">Director of operations</h2>
+        </div>
+        <div>
+          <img src="images/vol2.webp" alt="" class="rounded-3xl w-[60vh] sm:w-[100vh]">
+          <h1 class="text-[28px] font-bold">Larry Lawson</h1>
+          <h2 class="text-[18px] text-gray-500">Manager</h2>
+        </div>
+      </div>
+      <div class="bg-[#391D47] p-20 h-[80vh] mt-20">
+        <h1 class="lg:text-[56px] sm:text-[25px] text-center mx-20 font-bold text-white">Capturing the heart of our <br> CharityFlow's journey in images </h1>
+        <img src="images/plant.svg" alt="" class="rotate-180 m-[1px] translate-y-12 -translate-x-44">
+        <img src="images/journey1.jpg" alt="" class="rounded-md mx-auto p-20 mt-[-300px] ">
+      </div>
+      <div class="grid grid-cols-3 mx-[155px] mt-[300px] gap-10">
+        <div>
+          <img src="images/journey2.webp" alt="" class="rounded-3xl">
+        </div>
+        <div>
+          <img src="images/journey3.webp" alt="" class="rounded-3xl">
+        </div>
+        <div>
+          <img src="images/journey4.webp" alt="" class="rounded-3xl">
+        </div>
+      </div>
+      <div class="mt-[100px]">
+        <p class="text-[46px]  mx-[100px] ml-[150px] text-center font-bold">Join our community and make a positive change. Together, we've impacted people over</p>
+        <h1 class="text-[156px] font-bold text-[#FFD166] text-center">155,856+</h1>
+      </div>
+    </div>
+    <footer>
+      <div class="bg-black grid sm:grid-cols-2 lg:grid-cols-4  px-[10vh] py-[10vh]">
+        <div class="p-10 m-10">
+          <ul class="text-white text-xl">
+            <img src="images/log.svg" alt="">
+            <div class="flex">
+              <img src="images/add.svg" alt="">
+              <li class="mt-6 mx-[10px]">2002 Horton Ford Rd, Eidson, TN, 37731</li>
+            </div>
+            <div class="flex mt-5">
+              <img src="images/no.svg" alt="">
+              <li class="mx-[10px]">+91123456789</li>
+            </div>
+            <div class="flex mt-5">
+              <img src="images/email.svg" alt="">
+              <li class="mx-[10px]">hello@example.com</li>
+            </div>
+          </ul>
+        </div>
+        <div class="p-10 m-10">
+          <ul class="text-white text-xl">
+            <li>Page links</li>
+            <a href="">
+              <li>Home</li>
+            </a>
+            <a href="">
+              <li>About</li>
+            </a>
+            <a href="">
+              <li>Causes</li>
+            </a>
+            <a href="">
+              <li>Events</li>
+            </a>
+            <a href="">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+        <div class="p-10 m-10">
+          <ul class="text-xl text-white">
+            <li>Utilities</li>
+            <li>Style Guide</li>
+            <li>Instructions</li>
+            <li>Licenses</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="bg-[#9A5999] p-10 mx-10 rounded-2xl mt-20">
+          <p class="text-3xl text-white font-bold">Join us today and be a part of a beautiful world!</p>
+          <button class="w-full py-4  px-4 bg-yellow-500 text-white font-semibold rounded-full shadow-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-75 mt-12"> Donate now ❤️ </button>
+        </div>
+      </div>
+      <hr class="mt-[150px] mb-20 sm:w-[85vh] lg:w-[175vh] sm:m-auto lg:mx-10 my-20">
+    </footer>
+    <footer class="flex items-center justify-between p-4 bg-black">
+      <div class="text-gray-400 mx-20"> Designed by <span class="text-white">Webestica</span>, Powered by <span class="text-white">Webflow</span>
+      </div>
+      <div class="flex items-center space-x-5 text-left mx-20">
+        <a href="facebook.com" class="bg-gray-500 p-2 hover:text-white">
+          <img src="images/facebook.svg" alt="">
+        </a>
+        <a href="instagram.com" class="text-gray-600 hover:text-white">
+          <img src="images/instagram.svg" alt="">
+        </a>
+        <a href="twitter.com" class="text-gray-600 hover:text-white">
+          <img src="images/twitter.svg" alt="">
+        </a>
+        <a href="linkdin.com" class="text-gray-600 hover:text-white">
+          <img src="images/linkdin.svg" alt="">
+        </a>
+        <a href="youtube.com" class="text-gray-400 hover:text-white">
+          <img src="images/utube.svg" alt="">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

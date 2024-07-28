@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-R2wDbhLXFe0ok6tT4J1Rw8Bk8zj6GgIR8H5h+ln60r/mjUo5dc23tPO5st5b/OHt8byyN12jGtp+5lqE4hb6KA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-[#9A5999] text-white shadow-md py-4 ">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <!-- Left side - Gmail icon and mobile number -->
+        <div class="flex items-center space-x-4">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+          </svg>
+          <span class="font-semibold">example@gmail.com</span>
+          <a href="">+9167434877 </a>
+        </div>
+        <!-- Right side - Social media links -->
+        <div class="flex space-x-4">
+          <a href="facebook.com" class="text-white hover:text-gray-200">Facebook</a>
+          <a href="twitter.com" class="text-white hover:text-gray-200">Twitter</a>
+          <a href="instagram.com" class="text-white hover:text-gray-200">Instagram</a>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar -->
+    <header class="bg-white shadow-md">
+      <!-- NAvbar -->
+      <div class="container mx-auto flex justify-between items-center py-4 px-6 bg-[#391D47]">
+        <!-- Logo and Website Name -->
+        <div class="flex items-center space-x-2">
+          <img src="images/logo.jpg" alt="Logo" class="h-8">
+          <span class="text-[30px] font-semibold hidden md:block text-[#ffbf00]">Charityflow</span>
+        </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="md:hidden">
+          <button id="hamburger" class="hamburger">
+            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex space-x-4">
+          <a href="home.html" class="text-white text-[20px]  hover:text-[#ffbf00] hover:underline underline-offset-8 ">Home</a>
+          <a href="causes.html" class="text-white text-[20px]  hover:text-[#ffbf00]  hover:underline underline-offset-8">Causes</a>
+          <a href="about.html" class="text-white text-[20px]  hover:text-[#ffbf00]  hover:underline underline-offset-8">About</a>
+          <a href="contact.html" class="text-white text-[20px]  hover:text-[#ffbf00] hover:underline underline-offset-8 ">Contact</a>
+          <a href="events.html" class="text-white text-[20px]  hover:text-[#ffbf00] hover:underline underline-offset-8 ">Events</a>
+        </nav>
+        <!-- Donate Button with Heart Icon -->
+        <div class="hidden md:block">
+          <a href="#" class="bg-white text-gray-800 hover:text-gray-600 py-2 px-4 flex items-center justify-center rounded-full">
+            <svg class="w-6 h-6 mr-2 heart-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M10 18a1.5 1.5 0 0 1-1.5-1.5V13h3v3.5A1.5 1.5 0 0 1 10 18zm0-16a3.5 3.5 0 0 0-3.5 3.5C6.658 8.422 8.488 10 10 10c1.512 0 3.342-1.578 3.5-2.5A3.5 3.5 0 0 0 10 2z" clip-rule="evenodd"></path>
+            </svg> Donate Now </a>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile Menu (Hamburger Menu) -->
+    <div id="mobile-menu" class="md:hidden bg-white shadow-md">
+      <nav class="flex flex-col space-y-2 py-2 px-4">
+        <a href="#" class="text-gray-800 hover:text-gray-600">Home</a>
+        <a href="#" class="text-gray-800 hover:text-gray-600">Causes</a>
+        <a href="#" class="text-gray-800 hover:text-gray-600">About</a>
+        <a href="#" class="text-gray-800 hover:text-gray-600">Contact</a>
+      </nav>
+    </div>
+    <div class="grid sm:grid-cols-1 lg:grid-cols-[40%_auto] bg-[#391D47] ">
+      <div class="">
+        <p class="text-[60px] mx-10 text-white mt-[100px]">Help us build hope and homes</p>
+        <p class="text-white text-[20px] mx-10 mt-[30px]">Join our mission to provide essential support and resources to underprivileged communities around the world.</p>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg mt-[40px] mx-10"> learn how you can help </button>
+      </div>
+      <div class="py-6">
+        <img src="images/pic1.webp" alt="img" class="rounded-full sm:w-[25vh] sm:gap-[5px] lg:w-[300px] mx-auto ">
+        <img src="images/pic2.webp" alt="img" class="rounded-full sm:w-[25vh] sm:gap-[5px] lg:w-[250px] mx-[150px]">
+        <img src="images/pic3.webp" alt="img" class="rounded-full sm:w-[25vh] sm:mt-[-170px] sm:ml-[370px] sm:gap-[5px] lg:w-[210px] sm:mx-[490px] lg:mx-[500px] lg:mt-[-200px]">
+        <img src="images/pic5.webp" alt="img" class="rounded-full sm:w-[25vh] sm:gap-[5px] sm:ml-[260px] sm:mt-[-1px] lg:w-[150px] lg:mx-[300px] lg:mt-[40px] ">
+      </div>
+    </div>
+    <div class="grid-cols-2 flex text-[35px] font-bold">
+      <div class="text-left mt-[20vh] ml-[150px]">
+        <p>Embracing discomfort, we propel towards meaningful transformation, shaping a brighter future with every courageous decision we make.</p>
+      </div>
+      <div class="w-[400vh] mt-[5vh]">
+        <img src="images/pic4.webp" alt="">
+      </div>
+    </div>
+    <div class="grid grid-cols-2 gap-[50px] p-[50px] mt-[100px]">
+      <div class="w-[450px] mx-[100px] ml-[100px]">
+        <img src="images/pic6.webp" alt="img" class="rounded-3xl h-[500px]">
+      </div>
+      <div class="grid grid-cols-2 gap-[100px]">
+        <div class="text-[18px] text-gray-600">
+          <p>At CharityFlow, our mission is simple to make a positive impact in the lives of those who need it most. Founded in 2008, our organization has been dedicated to Briefly describing the main focus, e.g., 'improving education for underprivileged children', 'providing clean water solutions', or 'offering medical aid to crisis-hit regions'</p>
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg mt-[40px] mx-10 ml-[9px]"> Join our team </button>
+        </div>
+        <div class="text-[18px] text-gray-600 ">
+          <p>Through our tireless efforts and the support of our community, we have achieved remarkable milestones. From building schools and healthcare facilities to providing disaster relief and empowering communities.</p>
+        </div>
+        <div class="flex justify-center mt-[-80px] gap-[150px] ml-[300px]">
+          <div class="text-center mx-4">
+            <h1 class="text-4xl font-bold text-[#9A5999]">140+</h1>
+            <p>Volunteers joined this month</p>
+          </div>
+          <div class="text-center mx-4">
+            <h1 class="text-4xl font-bold text-[#9A5999]">20K</h1>
+            <p>Total human impacted this month</p>
+          </div>
+          <div class="text-center mx-4">
+            <h1 class="text-4xl font-bold text-[#9A5999]">62</h1>
+            <p>Lives saved in the last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class=" grid grid-cols-2 bg-purple-500 h-[69vh]">
+        <div>
+          <p class="text-[50px] text-white font-bold ml-[80px] mt-[100px] align-center">Your donation <br> empowers those in <br> need </p>
+          <div class="grid grid-cols-2  gap-[2px] items-center justify-center min-h-screen mt-[-300px]">
+            <div class="flex ml-[80px] w-10 ">
+              <img src="images/p1.webp" alt="" class="rounded-full ">
+              <img src="images/p2.webp" alt="" class="rounded-full ">
+              <img src="images/p3.webp" alt="" class="rounded-full ">
+              <img src="images/p4.webp" alt="" class="rounded-full ">
+            </div>
+            <div class="ml-[1px] text-[20px] text-white mt-[30px]">
+              <p>More than 5 million people from around the world have joined and helped our community.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <div>
+            <img src="images/box.svg" alt="" class="mt-[300px] rotate-5 ml-[30px]">
+          </div>
+          <div>
+            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg mt-[200px] mx-10 ml-[180px] mr"> Join our team </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-[80px] p-[20vh]">
+      <div>
+        <p class="text-5xl font-bold leading-normal">How can you support our cause?</p>
+      </div>
+      <div class="shadow-xl text-[20px] text-gray-600 p-8 rounded-lg border-1 border gray w-[400px]">
+        <img src="images/logo1.svg" alt="" class="bg-yellow-500 rounded-full p-4  ">
+        <p class="text-black font-bold text-[20px] mt-[40px]">Financial contributions</p>
+        <p>With your support, we can fund vital programs, expand our reach, and make a tangible difference.</p>
+      </div>
+      <div class="shadow-xl text-[20px]  text-gray-600 p-8 rounded-lg border-2 border gray w-[400px] ml-[85px] ">
+        <img src="images/logo2.svg" alt="" class="bg-yellow-500 rounded-full p-4 ">
+        <p class="text-black font-bold text-[20px] mt-[40px]">Volunteer with us</p>
+        <p>Whether it's mentoring, organizing events, or offering your expertise, every contribution counts.</p>
+      </div>
+    </div>
+    <div class="bg-[#391D47] m-[100px] rounded-2xl mt-[15px] p-20">
+      <div class="text-center">
+        <p class="text-white text-[60px] font-bold">The mission of our <br>organization </p>
+        <p class="text-white text-[20px] text-center">Explore our diverse range of programs and initiatives aimed at fostering positive <br> change and making a tangible impact in communities worldwide. </p>
+      </div>
+      <div class="grid grid-cols-[40%_auto] gap-[100px]">
+        <div class="ml-[100px]">
+          <div class="w-full max-w-sm p-4">
+            <div class="bg-transparant shadow-2xl rounded-lg overflow-hidden mb-4 custom-card">
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <img src="images/card1.svg" alt="" class="mx-5">
+                  <h2 class="text-2xl font-semibold text-white">Education and training program</h2>
+                  <button id="dropdownButton" class="focus:outline-none">
+                    <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+                <div id="dropdownContent" class="mt-4 text-gray-200 hidden text-xl">
+                  <p>Our Education and Training Program is designed to equip individuals with the knowledge, skills, and opportunities they need to thrive.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-transparant shadow-2xl rounded-lg overflow-hidden mb-4 custom-card">
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <img src="images/card2.svg" alt="" class="mx-5">
+                  <h2 class="text-2xl font-semibold text-white">Promoting wellness and security</h2>
+                  <button id="dropdownButton2" class="focus:outline-none">
+                    <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+                <div id="dropdownContent2" class="mt-4 text-gray-200 hidden text-xl">
+                  <p>Involves fostering a holistic approach to health and safety, ensuring the well-being and security of individuals and communities.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-transparant shadow-2xl rounded-lg overflow-hidden mb-4 custom-card">
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <img src="images/card3.svg" alt="" class="mx-5">
+                  <h2 class="text-2xl font-semibold text-white">Responding swiftly to disasters</h2>
+                  <button id="dropdownButton2" class="focus:outline-none">
+                    <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+                <div id="dropdownContent2" class="mt-4 text-gray-200 hidden">
+                  <p>Entails immediate and effective action to address and mitigate the impacts of natural or man-made catastrophes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-transparant shadow-2xl rounded-lg overflow-hidden mb-4 custom-card">
+              <div class="p-4">
+                <div class="flex items-center justify-between">
+                  <img src="images/card4.svg" alt="" class="mx-5">
+                  <h2 class="text-2xl font-semibold text-white">Brighter tomorrow</h2>
+                  <button id="dropdownButton2" class="focus:outline-none">
+                    <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+                <div id="dropdownContent2" class="mt-4 text-gray-200 hidden">
+                  <p>Refers to a hopeful and optimistic vision for the future, characterized by positive changes and improvements in various aspects of life.</p>
+                </div>
+              </div>
+            </div>
+            <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg mt-[40px] mx-10"> Join our mission </button>
+          </div>
+        </div>
+        <div class="">
+          <img src="images/earth.svg" alt="" class="w-[85vh] mt-[30px]">
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="grid grid-cols-2">
+        <div>
+          <p class="text-[50px] font-bold ml-[100px]">Engage with our ongoing causes</p>
+        </div>
+        <div>
+          <button class="bg-blue-900 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full mt-[40px] mx-[300px]"> View all Causes </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="bg-black grid sm:grid-cols-2 lg:grid-cols-4  px-[10vh] py-[10vh]">
+        <div class="p-10 m-10">
+          <ul class="text-white text-xl">
+            <img src="images/log.svg" alt="">
+            <div class="flex">
+              <img src="images/add.svg" alt="">
+              <li class="mt-6 mx-[10px]">2002 Horton Ford Rd, Eidson, TN, 37731</li>
+            </div>
+            <div class="flex mt-5">
+              <img src="images/no.svg" alt="">
+              <li class="mx-[10px]">+91123456789</li>
+            </div>
+            <div class="flex mt-5">
+              <img src="images/email.svg" alt="">
+              <li class="mx-[10px]">hello@example.com</li>
+            </div>
+          </ul>
+        </div>
+        <div class="p-10 m-10">
+          <ul class="text-white text-xl">
+            <li>Page links</li>
+            <a href="">
+              <li>Home</li>
+            </a>
+            <a href="">
+              <li>About</li>
+            </a>
+            <a href="">
+              <li>Causes</li>
+            </a>
+            <a href="">
+              <li>Events</li>
+            </a>
+            <a href="">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+        <div class="p-10 m-10">
+          <ul class="text-xl text-white">
+            <li>Utilities</li>
+            <li>Style Guide</li>
+            <li>Instructions</li>
+            <li>Licenses</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="bg-[#9A5999] p-10 mx-10 rounded-2xl mt-20">
+          <p class="text-3xl text-white font-bold">Join us today and be a part of a beautiful world!</p>
+          <button class="w-full py-4  px-4 bg-yellow-500 text-white font-semibold rounded-full shadow-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-75 mt-12"> Donate now ❤️ </button>
+        </div>
+      </div>
+      <hr class="mt-[150px] mb-20 sm:w-[85vh] lg:w-[175vh] sm:m-auto lg:mx-10 my-20">
+    </footer>
+    <footer class="flex items-center justify-between p-4 bg-black">
+      <div class="text-gray-400 mx-20"> Designed by <span class="text-white">Webestica</span>, Powered by <span class="text-white">Webflow</span>
+      </div>
+      <div class="flex items-center space-x-5 text-left mx-20">
+        <a href="facebook.com" class="bg-gray-500 p-2 hover:text-white">
+          <img src="images/facebook.svg" alt="">
+        </a>
+        <a href="instagram.com" class="text-gray-600 hover:text-white">
+          <img src="images/instagram.svg" alt="">
+        </a>
+        <a href="twitter.com" class="text-gray-600 hover:text-white">
+          <img src="images/twitter.svg" alt="">
+        </a>
+        <a href="linkdin.com" class="text-gray-600 hover:text-white">
+          <img src="images/linkdin.svg" alt="">
+        </a>
+        <a href="youtube.com" class="text-gray-400 hover:text-white">
+          <img src="images/utube.svg" alt="">
+        </a>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('dropdownButton').addEventListener('click', function() {
+        document.getElementById('dropdownContent').classList.toggle('hidden');
+      });
+      document.getElementById('dropdownButton2').addEventListener('click', function() {
+        document.getElementById('dropdownContent2').classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

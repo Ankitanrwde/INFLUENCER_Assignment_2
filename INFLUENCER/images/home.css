@@ -1,0 +1,33 @@
+/* Custom styles for the navbar */
+.navbar {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Custom styles for the hamburger icon */
+.hamburger {
+  cursor: pointer;
+}
+
+/* Custom styles for the mobile menu */
+.mobile-menu {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Show the mobile menu */
+.show-mobile-menu {
+  transform: translateY(0%);
+}
+
+/* Heart icon color */
+.heart-icon {
+  fill: red;
+}
+
+.rotate-5 {
+  transform: rotate(-4deg);
+}
+
+.rotate--5 {
+  transform: rotate(-1deg);
+}
